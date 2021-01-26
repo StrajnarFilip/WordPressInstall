@@ -1,5 +1,5 @@
 # WordPressInstall
-WordPress installation script. Tested on Ubuntu 20.04 on day: 26.1.2020
+WordPress installation script. Tested on Ubuntu 20.04 on day: 27.1.2020, tested on Debian 10 on day: 27.1.2020
 
 After installation, you access your WordPress website via http://*your_public_ip*
 
@@ -12,3 +12,6 @@ git clone https://github.com/StrajnarFilip/WordPressInstall.git
 # OR (the lazy method):
 
 wget https://raw.githubusercontent.com/StrajnarFilip/WordPressInstall/main/WordPress.bash ; bash WordPress.bash
+
+**On Debian you might need to install wget:**
+sudo apt -y update ; sudo apt -y install wget ; wget https://raw.githubusercontent.com/StrajnarFilip/WordPressInstall/main/WordPress.bash ; bash WordPress.bash
