@@ -1,3 +1,4 @@
+#!/bin/bash
     # WordPressInstall, a simple WordPress installation script
     # Copyright (C) 2021  Filip Strajnar
     
@@ -14,7 +15,6 @@
     # You should have received a copy of the GNU General Public License
     # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-#!/bin/bash
 if ! command -v apt &> /dev/null
 then
     echo 'You do not have APT package manager. This script will not work. Exiting.'
