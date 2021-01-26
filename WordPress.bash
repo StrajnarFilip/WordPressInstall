@@ -20,8 +20,8 @@ then
     echo 'You do not have APT package manager. This script will not work. Exiting.'
     exit
 fi
+echo -e "\e[1;44m Updating and upgrading packages. \e[0m"
 sudo apt -y update ; sudo apt -y upgrade ;\
-
 echo -e "\e[1;44m Installing MySQL server. \e[0m"
 sudo apt-get install mysql-server -y ; \
 echo -e "\e[1;44m Installing PHP for MySQL. \e[0m"
