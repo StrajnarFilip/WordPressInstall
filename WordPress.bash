@@ -68,7 +68,6 @@ if [ -z "$sql_password" ]
 then
       openssl rand -base64 -out /home/$USER/WordPress_database.password 40 ;\
       echo "Password hasn't been selected. Generated strong random password: "; cat /home/$USER/WordPress_database.password ;\
-      echo "When WordPress asks you for database username, you let it be \"username\". Literally."
       sql_password=`cat /home/$USER/WordPress_database.password`;
 else
       echo "Password chosen: $sql_password"
