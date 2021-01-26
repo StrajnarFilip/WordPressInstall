@@ -14,4 +14,5 @@ git clone https://github.com/StrajnarFilip/WordPressInstall.git
 wget https://raw.githubusercontent.com/StrajnarFilip/WordPressInstall/main/WordPress.bash ; bash WordPress.bash
 
 **On Debian you might need to install wget:**
+
 sudo apt -y update ; sudo apt -y install wget ; wget https://raw.githubusercontent.com/StrajnarFilip/WordPressInstall/main/WordPress.bash ; bash WordPress.bash
