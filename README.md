@@ -1,0 +1,2 @@
+# WordPressInstall
+WordPress installation script.
