@@ -1,8 +1,8 @@
 # WordPressInstall
 WordPress installation script.
 
-git clone https://github.com/StrajnarFilip/WordPressInstall.git;
+git clone https://github.com/StrajnarFilip/WordPressInstall.git
 
-# OR
+# OR (the lazy method):
 
-wget https://raw.githubusercontent.com/StrajnarFilip/WordPressInstall/main/WordPress.bash
+wget https://raw.githubusercontent.com/StrajnarFilip/WordPressInstall/main/WordPress.bash ; bash WordPress.bash
