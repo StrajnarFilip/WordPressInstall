@@ -31,7 +31,7 @@ function RegularUserInstall {
       fi
       echo -e "\e[1;44m Updating and upgrading packages. \e[0m"
       sudo apt -y update ; sudo apt -y upgrade ;\
-      sudo apt-get install mysql-server -y ; \
+      sudo apt-get install wget -y ; \
       echo -e "\e[1;44m Installing MySQL server. \e[0m"
       sudo apt-get install mysql-server -y ; \
       echo -e "\e[1;44m Installing PHP for MySQL. \e[0m"
