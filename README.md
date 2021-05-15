@@ -23,5 +23,5 @@ sudo apt -y update ; sudo apt -y install wget ; wget https://raw.githubuserconte
 # 0.0.2 branch:
 ```
 sudo apt -y update ; sudo apt -y install wget ; \
-wget https://raw.githubusercontent.com/StrajnarFilip/WordPressInstall/0.0.2/WordPress.bash ; bash WordPress.bash ;\
+wget https://raw.githubusercontent.com/StrajnarFilip/WordPressInstall/0.0.2/WordPress.bash ; bash WordPress.bash
 ```
