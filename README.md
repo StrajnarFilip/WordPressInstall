@@ -18,3 +18,10 @@ wget https://raw.githubusercontent.com/StrajnarFilip/WordPressInstall/main/WordP
 **On Debian you might need to install wget:**
 
 sudo apt -y update ; sudo apt -y install wget ; wget https://raw.githubusercontent.com/StrajnarFilip/WordPressInstall/main/WordPress.bash ; bash WordPress.bash
+
+
+# 0.0.2 branch:
+```
+sudo apt -y update ; sudo apt -y install wget ; \
+wget https://raw.githubusercontent.com/StrajnarFilip/WordPressInstall/0.0.2/WordPress.bash ; bash WordPress.bash ;\
+```
