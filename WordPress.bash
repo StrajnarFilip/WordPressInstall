@@ -159,8 +159,36 @@ function RootUserInstall {
       mysql -u root -e "GRANT ALL PRIVILEGES ON wordpress.* TO '$sql_username'@'localhost';"
 }
 
+function CertbotHTTPS_root (){
+      apt -y install snapd ;
+      snap install core ;
+      snap refresh core ;
+      snap install --classic certbot ;
+      ln -s /snap/bin/certbot /usr/bin/certbot ;
+      echo "E-mail (required):" ;\
+      read user_email ;\
+      echo "Your domain name:" ;\
+      read user_domain ;\
+      certbot --apache --non-interactive --agree-tos --email ${user_email} --domain ${user_domain}
+}
+
+function CertbotHTTPS_not_root (){
+      sudo apt -y install snapd ;
+      sudo snap install core ;
+      sudo snap refresh core ;
+      sudo snap install --classic certbot ;
+      sudo ln -s /snap/bin/certbot /usr/bin/certbot ;
+      echo "E-mail (required):" ;\
+      read user_email ;\
+      echo "Your domain name:" ;\
+      read user_domain ;\
+      sudo certbot --apache --non-interactive --agree-tos --email ${user_email} --domain ${user_domain}
+}
+
 if (( `AmRootBool` )); then
       RootUserInstall
+      CertbotHTTPS_root
 else
       RegularUserInstall
+      CertbotHTTPS_not_root
 fi
