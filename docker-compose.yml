@@ -16,6 +16,7 @@ services:
       MYSQL_DATABASE: "wordpress"
 
   wordpress:
+    hostname: localhost
     image: wordpress
     restart: always
     #networks:
