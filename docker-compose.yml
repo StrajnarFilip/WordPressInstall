@@ -1,0 +1,30 @@
+version: '3.1'
+
+services:
+  db:
+    image: mysql
+    restart: always
+    command: --default-authentication-plugin=mysql_native_password
+    volumes:
+      - ./db:/var/lib/mysql
+    ports:
+      - 3306:3306
+    #networks:
+    #  - wordpress_network
+    environment:
+      MYSQL_ROOT_PASSWORD: "DLTYtvJMbuyXXxsQk7jlfZ94RcsphlgNO3Mw6lkgKg=="
+      MYSQL_DATABASE: "wordpress"
+
+  wordpress:
+    image: wordpress
+    restart: always
+    #networks:
+    #  - wordpress_network
+    ports:
+      - 8080:80
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: root
+      WORDPRESS_DB_PASSWORD: "DLTYtvJMbuyXXxsQk7jlfZ94RcsphlgNO3Mw6lkgKg=="
+
+      WORDPRESS_DB_NAME: wordpress
