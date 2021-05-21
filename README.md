@@ -9,8 +9,11 @@ If you leave username prompt empty, it'll choose username. If you leave password
 
 By default, your WordPress database password will be saved in: **/home/$USER/WordPress_database.password**, you may use command **cat /home/$USER/WordPress_database.password** to view it.
 
+# For docker:
+```
 git clone --branch docker https://github.com/StrajnarFilip/WordPressInstall.git
 docker-compose up
+```
 
 # OR (the lazy method):
 
